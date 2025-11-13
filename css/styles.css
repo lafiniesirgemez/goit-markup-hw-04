@@ -302,13 +302,15 @@ p {
     letter-spacing: 0.02em;
 }
 .feature-one-icon{
-    width: 64px;
-    height: 64px;
+    width: 264px;
+    height: 112px;
     background-color: #f4f4fd;
     display: flex;
     margin-bottom: 8px;
     align-items: center;
     justify-content: center;
+    border:1px solid #8E8F99;
+    border-radius: 4px;
 }
 
 .visually-hidden {
@@ -416,6 +418,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 8px;
 }
 
 .our-team .container .team-socials .scm-link .icon-all {
