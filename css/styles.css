@@ -147,6 +147,13 @@ h2 {
 .menu .menulist:hover::after,
 .menu .menulist:focus::after {
     background-color: #404bbf;
+
+}
+.menu .menulist-s{
+    color: #404bbf;
+}
+.menu .menulist-s::after{
+    background-color: #404bbf;
 }
 
 .address {
@@ -382,6 +389,10 @@ p {
     background-color: #ffffff;
     border: 1px solid none;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team .container .team-list .team-pic .team-list-container {
@@ -429,6 +440,10 @@ p {
 .scm-link:focus {
     background-color: #404bbf;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scm-link:hover svg,
+.scm-link:focus svg {
+    fill: #f4f4fd;
 }
 
 .our-port {
@@ -513,6 +528,50 @@ p {
     letter-spacing: 0.02em;
     height: 24px;
     margin-bottom: 32px;
+}
+
+.port-pic {
+    background-color: #ffffff;
+    border: 1px solid #e7e9fc;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.port-pic:hover {
+    box-shadow:
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+
+.port-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.7);
+    transform: translateY(100%);
+    padding: 40px 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+
+.overlay-text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.port-pic:hover .overlay {
+    transform: translateY(0);
 }
 
 .footer {
@@ -600,4 +659,8 @@ p {
 .footerso-link:focus {
     background-color: #31d0aa;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footerso-link:hover svg,
+.footerso-link:focus svg {
+    fill: #f4f4fd;
 }
